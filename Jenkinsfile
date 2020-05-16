@@ -1,12 +1,11 @@
-pipelin {
- agent any
- stages {
-  stage('prueba') {
-    steps { 
-      sh 'cat prueba.txt'
-    }
-  }
+pipeline {
+   agent any
 
- }
-
+   stages {
+      stage('Hello') {
+         steps {
+            sh 'cat prueba.txt'
+         }
+      }
+   }
 }
